@@ -154,9 +154,17 @@ namespace C__Basics_03
             #region Q13
             //13.Which of the following statements is correct about the
             //  C#.NET code snippet given below?
-               int d;
-              d = Convert.ToInt32(!(30 < 20));
-           // output is : 1 
+            //    int d;
+            //   d = Convert.ToInt32(!(30 < 20));
+            //// output is : 1 
+
+            #endregion
+
+            #region Q14
+
+            Console.WriteLine(13 / 2 + " " + 13 % 2);
+            //output is:  d. 6 1
+            // 6 should be int becase int default
 
             #endregion
         }
