@@ -97,22 +97,37 @@ namespace C__Basics_03
             //double RateOfInterests = double.Parse(Console.ReadLine());
             //Console.WriteLine("Enter time :  ");
             //double time = double.Parse(Console.ReadLine());
-           
+
             //double Interest = (principal * RateOfInterests * time) / 100;
             //Console.WriteLine( $" Interest : { Interest}");
 
             #endregion
 
             #region Q9
-            Console.WriteLine("Enter your  Weight KG:  ");
-            double Weight = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your Height meter :  ");
-            double Height = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your  Weight KG:  ");
+            //double Weight = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Height meter :  ");
+            //double Height = double.Parse(Console.ReadLine());
 
 
-            double BMI = (Weight) / (Height * Height);
-            Console.WriteLine($"  MY BMI : {BMI}");
+            //double BMI = (Weight) / (Height * Height);
+            //Console.WriteLine($"  MY BMI : {BMI}");
 
+            #endregion
+
+            #region Q10
+
+
+            Console.WriteLine( "Enter The Temprature in degrees :" );
+
+            double Temprature = double.Parse( Console.ReadLine() );
+
+            string result = (Temprature < 10) ? "Just Cold" :
+                (Temprature > 30) ? " Just Hot" :
+                "Just Good ";  // Using nested ternary operator
+
+
+            Console.WriteLine(result );
             #endregion
         }
     }
