@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C__Basics_03
 {
@@ -80,16 +81,28 @@ namespace C__Basics_03
 
             #region Q7
 
-            string S1 = "sayed ";
-            string S2 = "kabeil ";
-            string S3 = S1 + S2;
-            Console.WriteLine(  S3);
-          
+            //string S1 = "sayed ";
+            //string S2 = "kabeil ";
+            //string S3 = S1 + S2;
+            //Console.WriteLine(  S3);
+
 
 
             #endregion
 
+            #region Q8
+            Console.WriteLine("Enter principal:  ");
+            double principal = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter RateOfInterests:  ");
+            double RateOfInterests = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter time :  ");
+            double time = double.Parse(Console.ReadLine());
+           
+            double Interest = (principal * RateOfInterests * time) / 100;
+            Console.WriteLine( $" Interest : { Interest}");
 
+            #endregion
         }
     }
 }
+
