@@ -91,15 +91,27 @@ namespace C__Basics_03
             #endregion
 
             #region Q8
-            Console.WriteLine("Enter principal:  ");
-            double principal = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter RateOfInterests:  ");
-            double RateOfInterests = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter time :  ");
-            double time = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter principal:  ");
+            //double principal = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter RateOfInterests:  ");
+            //double RateOfInterests = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter time :  ");
+            //double time = double.Parse(Console.ReadLine());
            
-            double Interest = (principal * RateOfInterests * time) / 100;
-            Console.WriteLine( $" Interest : { Interest}");
+            //double Interest = (principal * RateOfInterests * time) / 100;
+            //Console.WriteLine( $" Interest : { Interest}");
+
+            #endregion
+
+            #region Q9
+            Console.WriteLine("Enter your  Weight KG:  ");
+            double Weight = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your Height meter :  ");
+            double Height = double.Parse(Console.ReadLine());
+
+
+            double BMI = (Weight) / (Height * Height);
+            Console.WriteLine($"  MY BMI : {BMI}");
 
             #endregion
         }
