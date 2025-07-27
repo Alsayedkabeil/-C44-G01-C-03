@@ -81,7 +81,7 @@ namespace C__Basics_03
             #region Q7
 
             string S1 = "sayed ";
-            string S2 = "kabei ";
+            string S2 = "kabeil ";
             string S3 = S1 + S2;
             Console.WriteLine(  S3);
           
