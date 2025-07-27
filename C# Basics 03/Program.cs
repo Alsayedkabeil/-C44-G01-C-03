@@ -168,15 +168,31 @@ namespace C__Basics_03
 
 
             #endregion
+
             #region Q15
-            int num = 1, z = 5;
-            if (!(num <= 0))
-                Console.WriteLine(++num + z++ + " " + ++z);
-            else
-                Console.WriteLine(--num + z-- + " " + --z);
+            //int num = 1, z = 5;
+            //if (!(num <= 0))
+            //    Console.WriteLine(++num + z++ + " " + ++z);
+            //else
+            //    Console.WriteLine(--num + z-- + " " + --z);
             //Output is: 7 7
 
             #endregion
+            //Part 2 
+            #region Q1 Part 2
+            Console.WriteLine(  "Enter Number");
+            int Number = int.Parse( Console.ReadLine() );
+            if (Number %4 ==0 && Number %3==0)
+            {
+                Console.WriteLine("Yes");
+
+
+            }
+
+            else { Console.WriteLine(   "No"); }
+
+            #endregion
+
         }
     }
 }
