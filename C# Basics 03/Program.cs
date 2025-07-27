@@ -68,17 +68,24 @@ namespace C__Basics_03
             #endregion
 
             #region Q6
-           
-
-            Point P1 = new Point();
-            P1.X = 10;
-            P1.Y = 50;
-            P1.X = P1.Y;
-            Console.WriteLine( $"P1.X : { P1.X}");//50
-            Console.WriteLine($"P1.Y :{P1.Y}");//50
 
 
-        
+            //Point P1 = new Point();
+            //P1.X = 10;
+            //P1.Y = 50;
+            //P1.X = P1.Y;
+            //Console.WriteLine( $"P1.X : { P1.X}");//50
+            //Console.WriteLine($"P1.Y :{P1.Y}");//50
+            #endregion
+
+            #region Q7
+
+            string S1 = "sayed ";
+            string S2 = "kabei ";
+            string S3 = S1 + S2;
+            Console.WriteLine(  S3);
+          
+
             #endregion
 
 
