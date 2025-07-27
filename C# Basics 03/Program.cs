@@ -118,16 +118,30 @@ namespace C__Basics_03
             #region Q10
 
 
-            Console.WriteLine( "Enter The Temprature in degrees :" );
+            //Console.WriteLine( "Enter The Temprature in degrees :" );
 
-            double Temprature = double.Parse( Console.ReadLine() );
+            //double Temprature = double.Parse( Console.ReadLine() );
 
-            string result = (Temprature < 10) ? "Just Cold" :
-                (Temprature > 30) ? " Just Hot" :
-                "Just Good ";  // Using nested ternary operator
+            //string result = (Temprature < 10) ? "Just Cold" :
+            //    (Temprature > 30) ? " Just Hot" :
+            //    "Just Good ";  // Using nested ternary operator
 
 
-            Console.WriteLine(result );
+            //Console.WriteLine(result );
+            #endregion
+
+            #region Q11
+            
+            //Console.WriteLine(  "Enter Day :");
+            //int Day =int.Parse( Console.ReadLine() );
+            //Console.WriteLine("Enter Month: ");
+            //int Month = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Year: ");
+            //int Year = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Today's date : {Day},{Month},{Year} ");
+            //Console.WriteLine($"Today's date : {Day}/{Month}/{Year} ");
+            //Console.WriteLine($"Today's date : {Day}-{Month}-{Year} ");
+
             #endregion
         }
     }
