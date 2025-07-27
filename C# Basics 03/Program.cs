@@ -48,9 +48,24 @@
             #endregion
 
             #region Q4
-            string x = "think before u click  ";
+            //string x = "think before u click  ";
           
-            Console.WriteLine(x.Substring(5));
+            //Console.WriteLine(x.Substring(5));
+
+            #endregion
+
+            #region Q5
+
+            int Num01 = 5;
+            int Num02 = 10;
+
+            Num02 = Num01; //Num02 refer to the value of Num01
+            Console.WriteLine(  Num02); //Num02 =5
+
+            // value of 10 unreachable
+
+
+
 
             #endregion
 
