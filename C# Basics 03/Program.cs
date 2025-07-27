@@ -131,7 +131,7 @@ namespace C__Basics_03
             #endregion
 
             #region Q11
-            
+
             //Console.WriteLine(  "Enter Day :");
             //int Day =int.Parse( Console.ReadLine() );
             //Console.WriteLine("Enter Month: ");
@@ -141,6 +141,13 @@ namespace C__Basics_03
             //Console.WriteLine($"Today's date : {Day},{Month},{Year} ");
             //Console.WriteLine($"Today's date : {Day}/{Month}/{Year} ");
             //Console.WriteLine($"Today's date : {Day}-{Month}-{Year} ");
+
+            #endregion
+
+            #region Q12
+            DateTime date = new DateTime(2024, 6, 14);
+            Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
+            /// OutPut is : c. The event is on 06/14/2024
 
             #endregion
         }
