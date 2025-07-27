@@ -162,9 +162,19 @@ namespace C__Basics_03
 
             #region Q14
 
-            Console.WriteLine(13 / 2 + " " + 13 % 2);
+            //Console.WriteLine(13 / 2 + " " + 13 % 2);
             //output is:  d. 6 1
             // 6 should be int becase int default
+
+
+            #endregion
+            #region Q15
+            int num = 1, z = 5;
+            if (!(num <= 0))
+                Console.WriteLine(++num + z++ + " " + ++z);
+            else
+                Console.WriteLine(--num + z-- + " " + --z);
+            //Output is: 7 7
 
             #endregion
         }
