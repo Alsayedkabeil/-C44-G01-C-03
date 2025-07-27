@@ -145,9 +145,18 @@ namespace C__Basics_03
             #endregion
 
             #region Q12
-            DateTime date = new DateTime(2024, 6, 14);
-            Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
-            /// OutPut is : c. The event is on 06/14/2024
+            //DateTime date = new DateTime(2024, 6, 14);
+            //Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
+            ///// OutPut is : c. The event is on 06/14/2024
+
+            #endregion
+
+            #region Q13
+            //13.Which of the following statements is correct about the
+            //  C#.NET code snippet given below?
+               int d;
+              d = Convert.ToInt32(!(30 < 20));
+           // output is : 1 
 
             #endregion
         }
