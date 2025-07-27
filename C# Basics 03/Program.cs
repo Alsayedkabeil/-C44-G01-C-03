@@ -1,4 +1,6 @@
-﻿namespace C__Basics_03
+﻿using System.Drawing;
+
+namespace C__Basics_03
 {
     internal class Program
     {
@@ -18,7 +20,7 @@
 
             #region Q2
 
-   
+
 
             //string input = "seka";
             //int number = Convert.ToInt32(input);
@@ -49,25 +51,36 @@
 
             #region Q4
             //string x = "think before u click  ";
-          
+
             //Console.WriteLine(x.Substring(5));
 
             #endregion
 
             #region Q5
 
-            int Num01 = 5;
-            int Num02 = 10;
+            //int Num01 = 5;
+            //int Num02 = 10;
 
-            Num02 = Num01; //Num02 refer to the value of Num01
-            Console.WriteLine(  Num02); //Num02 =5
+            //Num02 = Num01; //Num02 refer to the value of Num01
+            //Console.WriteLine(  Num02); //Num02 =5
 
-            // value of 10 unreachable
-
-
-
-
+            //// value of 10 unreachable
             #endregion
+
+            #region Q6
+           
+
+            Point P1 = new Point();
+            P1.X = 10;
+            P1.Y = 50;
+            P1.X = P1.Y;
+            Console.WriteLine( $"P1.X : { P1.X}");//50
+            Console.WriteLine($"P1.Y :{P1.Y}");//50
+
+
+        
+            #endregion
+
 
         }
     }
