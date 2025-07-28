@@ -405,9 +405,6 @@ namespace C__Basics_03
             int Div = num01 / num02 * num03;
             Console.WriteLine($"Sum is :  {Div}");
 
-
-
-
             #endregion
 
 
