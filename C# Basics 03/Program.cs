@@ -332,15 +332,36 @@ namespace C__Basics_03
             #endregion
 
             #region Q9
-            Console.WriteLine("Num1 :"); 
-            double num1= double.Parse(Console.ReadLine());
-            Console.WriteLine("Power : ");
-            double pow = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Num1 :"); 
+            //double num1= double.Parse(Console.ReadLine());
+            //Console.WriteLine("Power : ");
+            //double pow = double.Parse(Console.ReadLine());
 
+            //double Powered_num = Math.Pow( num1,pow);
+            //Console.WriteLine($" Powered num {Powered_num}" );
 
+            #endregion
 
-            double Powered_num = Math.Pow( num1,pow);
-            Console.WriteLine($" Powered num {Powered_num}" );
+            #region Q10
+
+            Console.WriteLine(" Mark 1");
+           double mark1 = double.Parse(Console.ReadLine());
+            Console.WriteLine(" Mark 2");
+            double mark2 = double.Parse(Console.ReadLine());
+            Console.WriteLine(" Mark 3");
+            double mark3 = double.Parse(Console.ReadLine());
+            Console.WriteLine(" Mark 4");
+            double mark4 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(" Mark 5");
+            double mark5 = double.Parse(Console.ReadLine());
+            double Total = mark1 + mark2 + mark3 + mark4 +mark5;
+            Console.WriteLine($"Total :{Total} ");
+            double Average = Total / 5;
+            Console.WriteLine($"Average : {Average}");
+            double Percentage = Average / 100;
+            Console.WriteLine(  $"Percentage {Percentage} %");
+
 
             #endregion
 
