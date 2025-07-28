@@ -227,10 +227,6 @@ namespace C__Basics_03
             int min = Math.Min(number01, Math.Min(number02, number03));
             Console.WriteLine(  $"MAx Element is {max}");
             Console.WriteLine($"Min Element is : {min}  ");
-
-           
-
-
             #endregion
 
 
