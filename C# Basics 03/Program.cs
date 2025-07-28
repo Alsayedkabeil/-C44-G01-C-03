@@ -276,7 +276,7 @@ namespace C__Basics_03
             #endregion
 
             #region Q6
-            //Console.WriteLine(  "enetr num ");
+            //Console.WriteLine(  "enter num ");
             //int num = int .Parse(Console.ReadLine() );
             //for (int i = 1; i <= num; i++)
             //{
@@ -292,21 +292,48 @@ namespace C__Basics_03
 
             #endregion
             #region Q7
+            //Console.WriteLine( "Enter number ");
+            //int num = int.Parse( Console.ReadLine() );
+
+            //for (int i =1 ; i <= num; i++) 
+            //{
+            //int mul = i * 5;
+            //    Console.WriteLine( mul );
+
+            //}
+            // Excellent Sayed without help
+            #endregion
+
+
+            #region Q8
+
             Console.WriteLine( "Enter number ");
             int num = int.Parse( Console.ReadLine() );
 
             for (int i =1 ; i <= num; i++) 
             {
-            int mul = i * 5;
-                Console.WriteLine( mul );
-
+                if (i  %2 == 0 )
+                {
+                    Console.WriteLine(i);
+                }
             }
 
-            #endregion
+            ////////////OR
 
+            //Console.Write("Enter a number: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
 
+            //for (int i = 2; i <= number; i += 2)
+            //{
+            //    Console.Write(i + " ");
+            //}
 
+            //Console.WriteLine(); // سطر جديد بعد الطباعة
         }
+
+        #endregion
+
+    }
     }
 }
 
