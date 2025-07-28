@@ -178,20 +178,42 @@ namespace C__Basics_03
             //Output is: 7 7
 
             #endregion
-            //Part 2 
+            /////////// Part 2 /////////////////////////////////////////////////////////
             #region Q1 Part 2
-            Console.WriteLine(  "Enter Number");
-            int Number = int.Parse( Console.ReadLine() );
-            if (Number %4 ==0 && Number %3==0)
-            {
-                Console.WriteLine("Yes");
+            //Console.WriteLine(  "Enter Number");
+            //int Number = int.Parse( Console.ReadLine() );
+            //if (Number %4 ==0 && Number %3==0)
+            //{
+            //    Console.WriteLine("Yes");
 
 
-            }
+            //}
 
-            else { Console.WriteLine(   "No"); }
+            //else { Console.WriteLine(   "No"); }
 
             #endregion
+
+            #region Q2
+            Console.WriteLine(" Enter Number : ");
+            int num = int.Parse(Console.ReadLine());
+            if (num < 0)
+            {
+                Console.WriteLine(" Number is negative");
+            }
+            if (num > 0)
+            {
+                Console.WriteLine(" Number is positive");
+            }
+
+            else if (num == 0)
+            {
+                Console.WriteLine(" number is Zero");
+
+            }
+            #endregion
+
+
+
 
         }
     }
