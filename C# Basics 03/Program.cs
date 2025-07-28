@@ -194,24 +194,43 @@ namespace C__Basics_03
             #endregion
 
             #region Q2
-            Console.WriteLine(" Enter Number : ");
-            int num = int.Parse(Console.ReadLine());
-            if (num < 0)
-            {
-                Console.WriteLine(" Number is negative");
-            }
-            if (num > 0)
-            {
-                Console.WriteLine(" Number is positive");
-            }
+            //Console.WriteLine(" Enter Number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //if (num < 0)
+            //{
+            //    Console.WriteLine(" Number is negative");
+            //}
+            //if (num > 0)
+            //{
+            //    Console.WriteLine(" Number is positive");
+            //}
 
-            else if (num == 0)
-            {
-                Console.WriteLine(" number is Zero");
+            //else if (num == 0)
+            //{
+            //    Console.WriteLine(" number is Zero");
 
-            }
+            //}
             #endregion
 
+
+            #region Q3
+
+           
+            Console.WriteLine(  "Enter number01: ");
+            int number01 =int.Parse( Console.ReadLine() );
+            Console.WriteLine("Enter number02: ");
+            int number02 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter number03: ");
+            int number03 = int.Parse(Console.ReadLine());
+
+            int max = Math.Max(number01,Math.Max(number02,number03));
+            int min = Math.Min(number01, Math.Min(number02, number03));
+            Console.WriteLine(  $"MAx Element is {max}");
+            Console.WriteLine($"Min Element is : {min}  ");
+           
+
+
+            #endregion
 
 
 
