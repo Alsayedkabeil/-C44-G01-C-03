@@ -276,22 +276,33 @@ namespace C__Basics_03
             #endregion
 
             #region Q6
-            Console.WriteLine(  "enetr num ");
-            int num = int .Parse(Console.ReadLine() );
-            for (int i = 1; i <= num; i++)
-            {
-                Console.Write( i );
-                if(i!= num)
-                {
-                    Console.Write(", ");
-                }
+            //Console.WriteLine(  "enetr num ");
+            //int num = int .Parse(Console.ReadLine() );
+            //for (int i = 1; i <= num; i++)
+            //{
+            //    Console.Write( i );
+            //    if(i!= num)
+            //    {
+            //        Console.Write(", ");
+            //    }
 
-            }
-            
+            //}
+
 
 
             #endregion
+            #region Q7
+            Console.WriteLine( "Enter number ");
+            int num = int.Parse( Console.ReadLine() );
 
+            for (int i =1 ; i <= num; i++) 
+            {
+            int mul = i * 5;
+                Console.WriteLine( mul );
+
+            }
+
+            #endregion
 
 
 
