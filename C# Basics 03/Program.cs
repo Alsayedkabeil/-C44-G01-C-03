@@ -243,34 +243,51 @@ namespace C__Basics_03
             //else { Console.WriteLine(   " is odd "); }
             #endregion
             #region Q5
-            Console.WriteLine("enter character  ");
-            char ch1 = Convert.ToChar(Console.ReadLine().ToLower());
-            char[] Vowels = { 'a', 'e', 'i', 'o', 'u' };
+            //Console.WriteLine("enter character  ");
+            //char ch1 = Convert.ToChar(Console.ReadLine().ToLower());
+            //char[] Vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-            if (Array.Exists(Vowels, Vowels => Vowels == ch1))
+            //if (Array.Exists(Vowels, Vowels => Vowels == ch1))
+            //{
+            //    Console.WriteLine("Vowels");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("consonant");
+            //}
+
+            ////another sovle
+
+            //Console.Write("Enter a character: ");
+            //char ch = Convert.ToChar(Console.ReadLine().ToLower());
+
+            //if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //{
+            //    Console.WriteLine("Vowel");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Consonant");
+            //}
+
+
+
+
+            #endregion
+
+            #region Q6
+            Console.WriteLine(  "enetr num ");
+            int num = int .Parse(Console.ReadLine() );
+            for (int i = 1; i <= num; i++)
             {
-                Console.WriteLine("Vowels");
+                Console.Write( i );
+                if(i!= num)
+                {
+                    Console.Write(", ");
+                }
+
             }
-            else
-            {
-                Console.WriteLine("consonant");
-            }
-
-            //another sovle
-
-            Console.Write("Enter a character: ");
-            char ch = Convert.ToChar(Console.ReadLine().ToLower());
-
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-            {
-                Console.WriteLine("Vowel");
-            }
-            else
-            {
-                Console.WriteLine("Consonant");
-            }
-
-
+            
 
 
             #endregion
