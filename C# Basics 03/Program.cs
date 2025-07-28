@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection.Metadata;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C__Basics_03
@@ -230,17 +231,52 @@ namespace C__Basics_03
 
             #endregion
             #region Q4
-            Console.WriteLine( "Enter num ");
+            //Console.WriteLine( "Enter num ");
 
-            int num = int.Parse( Console.ReadLine() );
+            //int num = int.Parse( Console.ReadLine() );
 
-            if (num % 2 == 0)
-            {
-                Console.WriteLine(" is even ");
+            //if (num % 2 == 0)
+            //{
+            //    Console.WriteLine(" is even ");
 
-            }
-            else { Console.WriteLine(   " is odd "); }
+            //}
+            //else { Console.WriteLine(   " is odd "); }
             #endregion
+            #region Q5
+            Console.WriteLine("enter character  ");
+            char ch1 = Convert.ToChar(Console.ReadLine().ToLower());
+            char[] Vowels = { 'a', 'e', 'i', 'o', 'u' };
+
+            if (Array.Exists(Vowels, Vowels => Vowels == ch1))
+            {
+                Console.WriteLine("Vowels");
+            }
+            else
+            {
+                Console.WriteLine("consonant");
+            }
+
+            //another sovle
+
+            Console.Write("Enter a character: ");
+            char ch = Convert.ToChar(Console.ReadLine().ToLower());
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            {
+                Console.WriteLine("Vowel");
+            }
+            else
+            {
+                Console.WriteLine("Consonant");
+            }
+
+
+
+
+            #endregion
+
+
+
 
         }
     }
