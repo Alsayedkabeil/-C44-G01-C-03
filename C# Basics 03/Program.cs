@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Reflection.Metadata;
+using System.Threading.Channels;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C__Basics_03
@@ -344,29 +345,52 @@ namespace C__Basics_03
 
             #region Q10
 
-            Console.WriteLine(" Mark 1");
-           double mark1 = double.Parse(Console.ReadLine());
-            Console.WriteLine(" Mark 2");
-            double mark2 = double.Parse(Console.ReadLine());
-            Console.WriteLine(" Mark 3");
-            double mark3 = double.Parse(Console.ReadLine());
-            Console.WriteLine(" Mark 4");
-            double mark4 = double.Parse(Console.ReadLine());
+           // Console.WriteLine(" Mark 1");
+           //double mark1 = double.Parse(Console.ReadLine());
+           // Console.WriteLine(" Mark 2");
+           // double mark2 = double.Parse(Console.ReadLine());
+           // Console.WriteLine(" Mark 3");
+           // double mark3 = double.Parse(Console.ReadLine());
+           // Console.WriteLine(" Mark 4");
+           // double mark4 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine(" Mark 5");
-            double mark5 = double.Parse(Console.ReadLine());
-            double Total = mark1 + mark2 + mark3 + mark4 +mark5;
-            Console.WriteLine($"Total :{Total} ");
-            double Average = Total / 5;
-            Console.WriteLine($"Average : {Average}");
-            double Percentage = Average / 100;
-            Console.WriteLine(  $"Percentage {Percentage} %");
+           // Console.WriteLine(" Mark 5");
+           // double mark5 = double.Parse(Console.ReadLine());
+           // double Total = mark1 + mark2 + mark3 + mark4 +mark5;
+           // Console.WriteLine($"Total :{Total} ");
+           // double Average = Total / 5;
+           // Console.WriteLine($"Average : {Average}");
+           // double Percentage = Average / 100;
+           // Console.WriteLine(  $"Percentage {Percentage} %");
 
 
             #endregion
 
 
+            #region Q11
 
+            Console.WriteLine(  " Enter the order of Month (1-12)");
+            int month = int.Parse( Console.ReadLine() );
+            int days;
+
+            switch (month)
+            {
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: days = 31;
+                    break;
+
+                case 4: case 6: case 9: case 11:days = 30;
+                    break;
+                case 2: days = 28;
+                    break;
+                default:
+                    Console.WriteLine("Invalid month number.");
+                    return;
+    
+            
+            }
+            Console.WriteLine("Days in Month: " + days);
+
+            #endregion
 
 
 
