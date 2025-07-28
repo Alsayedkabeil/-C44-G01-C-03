@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Reflection.Metadata;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -304,19 +305,18 @@ namespace C__Basics_03
             // Excellent Sayed without help
             #endregion
 
-
             #region Q8
 
-            Console.WriteLine( "Enter number ");
-            int num = int.Parse( Console.ReadLine() );
+            //Console.WriteLine( "Enter number ");
+            //int num = int.Parse( Console.ReadLine() );
 
-            for (int i =1 ; i <= num; i++) 
-            {
-                if (i  %2 == 0 )
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //for (int i =1 ; i <= num; i++) 
+            //{
+            //    if (i  %2 == 0 )
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
             ////////////OR
 
@@ -328,12 +328,42 @@ namespace C__Basics_03
             //    Console.Write(i + " ");
             //}
 
-            //Console.WriteLine(); // سطر جديد بعد الطباعة
+            //Console.WriteLine();
+            #endregion
+
+            #region Q9
+            Console.WriteLine("Num1 :"); 
+            double num1= double.Parse(Console.ReadLine());
+            Console.WriteLine("Power : ");
+            double pow = double.Parse(Console.ReadLine());
+
+
+
+            double Powered_num = Math.Pow( num1,pow);
+            Console.WriteLine($" Powered num {Powered_num}" );
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
-        #endregion
-
-    }
-    }
+        
+    } 
+         
+    
 }
 
