@@ -393,19 +393,34 @@ namespace C__Basics_03
             #endregion
 
             #region Q12
-            int num01 = 100;
-            int num02 = 15;
-            int num03 = 25;
-            int Sum = num01 + num02 + num03;
-            Console.WriteLine ( $"Sum is :  {Sum}");
-            int Mul = num01 * num02 * num03;
-            Console.WriteLine($"Sum is :  {Mul}");
-            int Sub = num01 - num02 - num03;
-            Console.WriteLine($"Sum is :  {Sub}");
-            int Div = num01 / num02 * num03;
-            Console.WriteLine($"Sum is :  {Div}");
+            //int num01 = 100;
+            //int num02 = 15;
+            //int num03 = 25;
+            //int Sum = num01 + num02 + num03;
+            //Console.WriteLine ( $"Sum is :  {Sum}");
+            //int Mul = num01 * num02 * num03;
+            //Console.WriteLine($"Sum is :  {Mul}");
+            //int Sub = num01 - num02 - num03;
+            //Console.WriteLine($"Sum is :  {Sub}");
+            //int Div = num01 / num02 * num03;
+            //Console.WriteLine($"Sum is :  {Div}");
 
             #endregion
+            #region Q13
+
+            Console.WriteLine(  "Enter a String");
+            string Input = Console.ReadLine();
+            char[] chars = Input.ToCharArray();
+            Array.Reverse(chars);
+
+            string revered = new  string(chars);
+            
+            Console.WriteLine( $"Reversed String : {revered}" );
+            
+
+
+            #endregion
+
 
 
 
