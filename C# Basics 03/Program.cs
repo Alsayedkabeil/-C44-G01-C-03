@@ -477,34 +477,92 @@ namespace C__Basics_03
 
             #region Q16
             // إدخال النقاط من المستخدم
-            Console.WriteLine("Enter coordinates of 3 points:");
+            //Console.WriteLine("Enter coordinates of 3 points:");
 
-            Console.Write("x1: ");
-            int x1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("y1: ");
-            int y1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("x1: ");
+            //int x1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("y1: ");
+            //int y1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("x2: ");
-            int x2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("y2: ");
-            int y2 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("x2: ");
+            //int x2 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("y2: ");
+            //int y2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("x3: ");
-            int x3 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("y3: ");
-            int y3 = Convert.ToInt32(Console.ReadLine());
-            // استخدام الضرب التبادلي لمقارنة الميل بدون قسمة
-            if ((y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1))
+            //Console.Write("x3: ");
+            //int x3 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("y3: ");
+            //int y3 = Convert.ToInt32(Console.ReadLine());
+            //// استخدام الضرب التبادلي لمقارنة الميل بدون قسمة
+            //if ((y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1))
+            //{
+            //    Console.WriteLine("The points lie on a straight line.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The points do NOT lie on a straight line.");
+            //}
+
+            #endregion
+
+
+            #region Q17
+            Console.WriteLine(  " enter hour of work");
+            int Hour = int.Parse(Console.ReadLine());
+            if (Hour >= 2 && Hour < 3 ) 
             {
-                Console.WriteLine("The points lie on a straight line.");
+
+                Console.WriteLine("highly efficient.");
+            }
+
+           else if (Hour >= 3 && Hour < 4)
+            {
+
+                Console.WriteLine("should increase their speed");
+
+            }
+           
+           else if (Hour >= 4 && Hour <= 5)
+            {
+
+                Console.WriteLine("should provided with training to enhance their speed");
+
+            }
+            else if (Hour > 5)
+            {
+
+                Console.WriteLine(" required to leave the company.");
+
             }
             else
             {
-                Console.WriteLine("The points do NOT lie on a straight line.");
+                Console.WriteLine("Invalid input. Time must be 2 hours or more.");
             }
+
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
-        #endregion
+
 
 
 
