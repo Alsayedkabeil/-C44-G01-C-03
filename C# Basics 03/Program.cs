@@ -436,43 +436,77 @@ namespace C__Basics_03
             //   Console.WriteLine("Reversed number: " + reversed);
             #endregion
 
-            #region Q15
-         
-            Console.Write("Input starting number of range: ");
-            int start = Convert.ToInt32(Console.ReadLine());
+            // Hard 01
+            #region Q15 
 
-            Console.Write("Input ending number of range: ");
-            int end = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Input starting number of range: ");
+            //    int start = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"The prime numbers between {start} and {end} are:");
+            //    Console.Write("Input ending number of range: ");
+            //    int end = Convert.ToInt32(Console.ReadLine());
 
-            for (int num = start; num <= end; num++)
+            //    Console.WriteLine($"The prime numbers between {start} and {end} are:");
+
+            //    for (int num = start; num <= end; num++)
+            //    {
+            //        if (IsPrime(num))
+            //        {
+            //            Console.Write(num + " ");
+            //        }
+            //    }
+
+            //    Console.WriteLine(); // سطر جديد بعد الطباعة
+            //}
+
+            //static bool IsPrime(int number)
+            //{
+            //    if (number <= 1)
+            //        return false;
+
+            //    for (int i = 2; i <= Math.Sqrt(number); i++)
+            //    {
+            //        if (number % i == 0)
+            //            return false;
+            //    }
+
+            //    return true;
+            //}
+
+
+            #endregion
+
+            #region Q16
+            // إدخال النقاط من المستخدم
+            Console.WriteLine("Enter coordinates of 3 points:");
+
+            Console.Write("x1: ");
+            int x1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("y1: ");
+            int y1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("x2: ");
+            int x2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("y2: ");
+            int y2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("x3: ");
+            int x3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("y3: ");
+            int y3 = Convert.ToInt32(Console.ReadLine());
+            // استخدام الضرب التبادلي لمقارنة الميل بدون قسمة
+            if ((y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1))
             {
-                if (IsPrime(num))
-                {
-                    Console.Write(num + " ");
-                }
+                Console.WriteLine("The points lie on a straight line.");
             }
-
-            Console.WriteLine(); // سطر جديد بعد الطباعة
-        }
-
-        static bool IsPrime(int number)
-        {
-            if (number <= 1)
-                return false;
-
-            for (int i = 2; i <= Math.Sqrt(number); i++)
+            else
             {
-                if (number % i == 0)
-                    return false;
+                Console.WriteLine("The points do NOT lie on a straight line.");
             }
-
-            return true;
         }
-
 
         #endregion
+
+
 
 
 
