@@ -423,21 +423,69 @@ namespace C__Basics_03
 
             #region Q14
 
-            Console.Write("Enter an integer: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int reversed = 0;
+            //Console.Write("Enter an integer: ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int reversed = 0;
 
-            while (number != 0)
+            //while (number != 0)
+            //{
+            //    int digit = number % 10;           // استخراج آخر رقم
+            //    reversed = reversed * 10 + digit;  // بناء الرقم المعكوس
+            //    number /= 10;                      // إزالة الرقم الأخير
+            //}
+            //   Console.WriteLine("Reversed number: " + reversed);
+            #endregion
+
+            #region Q15
+         
+            Console.Write("Input starting number of range: ");
+            int start = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input ending number of range: ");
+            int end = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"The prime numbers between {start} and {end} are:");
+
+            for (int num = start; num <= end; num++)
             {
-                int digit = number % 10;           // استخراج آخر رقم
-                reversed = reversed * 10 + digit;  // بناء الرقم المعكوس
-                number /= 10;                      // إزالة الرقم الأخير
+                if (IsPrime(num))
+                {
+                    Console.Write(num + " ");
+                }
             }
 
-            Console.WriteLine("Reversed number: " + reversed);
+            Console.WriteLine(); // سطر جديد بعد الطباعة
         }
 
+        static bool IsPrime(int number)
+        {
+            if (number <= 1)
+                return false;
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+
+            return true;
+        }
+
+
         #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -453,7 +501,20 @@ namespace C__Basics_03
     }
 
 
- }
-         
- 
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
