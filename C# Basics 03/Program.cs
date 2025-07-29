@@ -408,35 +408,52 @@ namespace C__Basics_03
             #endregion
             #region Q13
 
-            Console.WriteLine(  "Enter a String");
-            string Input = Console.ReadLine();
-            char[] chars = Input.ToCharArray();
-            Array.Reverse(chars);
+            //Console.WriteLine(  "Enter a String");
+            //string Input = Console.ReadLine();
+            //char[] chars = Input.ToCharArray();
+            //Array.Reverse(chars);
 
-            string revered = new  string(chars);
-            
-            Console.WriteLine( $"Reversed String : {revered}" );
-            
+            //string revered = new  string(chars);
+
+            //Console.WriteLine( $"Reversed String : {revered}" );
+
 
 
             #endregion
 
+            #region Q14
 
+            Console.Write("Enter an integer: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int reversed = 0;
 
+            while (number != 0)
+            {
+                int digit = number % 10;           // استخراج آخر رقم
+                reversed = reversed * 10 + digit;  // بناء الرقم المعكوس
+                number /= 10;                      // إزالة الرقم الأخير
+            }
 
-
-
-
-
-
-
-
-
+            Console.WriteLine("Reversed number: " + reversed);
         }
 
+        #endregion
 
-    } 
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+ }
          
-    
-}
+ 
 
